@@ -23,19 +23,13 @@ jobs:
           go-version: ">=1.19.5"
       - name: Depedencies
         run: yarn install --immutable
-      - uses: anchore/sbom-action@v0
-        with:
-          path: .
-          output-file: ./bom.json
-          artifact-name: bom.json
-          format: cyclonedx-json
       - name: Transmit generated SBOM to Manifest
         uses: manifest-cyber/manifest-github-action@main
         id: transmit
         with:
           apiKey: ${{ secrets.MANIFEST_API_KEY }}
           bomFilePath: "./bom.json"
-          sbom-version: ""
-          sbom-name: testing-monorepo
-          sbom-output: cyclonedx-json
+          sbomVersion: ""
+          sbomName: testing-monorepo
+          sbomOutput: cyclonedx-json
  
