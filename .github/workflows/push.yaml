@@ -23,14 +23,14 @@ jobs:
           go-version: ">=1.19.5"
       - name: Depedencies
         run: yarn install --immutable
-      - uses: anchore/sbom-action@v0
+      - uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
         with:
           path: .
           output-file: ./bom.json
           artifact-name: bom.json
           format: cyclonedx-json
       - name: Transmit generated SBOM to Manifest
-        uses: manifest-cyber/manifest-github-action@main
+        uses: manifest-cyber/manifest-github-action@6bf8917b77e9d721d7971dfae955b968ab3bd817 # main
         id: transmit
         with:
           apiKey: ${{ secrets.MANIFEST_API_KEY }}
