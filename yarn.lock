@@ -158,11 +158,11 @@ __metadata:
   linkType: hard
 
 "@nx-go/nx-go@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "@nx-go/nx-go@npm:2.7.0"
+  version: 2.8.0
+  resolution: "@nx-go/nx-go@npm:2.8.0"
   dependencies:
     fs-extra: "npm:^9.1.0"
-  checksum: 89fe1d97429aa3f1bcf8edfc49e1220ac3ac72dae13ef1be79d169ef3c0303cb567df9bd90d4039d5903ea23f00a1bb88330c110493b30f5c55d476e3625d9f2
+  checksum: 797064e50ae84c08d648cdf4bb747e7bb5ab41ff180b8c2233b390d6392e223524fe5c834a4cbdce4e6096c6568677c36b24876e5d1e2c5305d30dd2515a84ed
   languageName: node
   linkType: hard
 
