@@ -157,12 +157,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx-go/nx-go@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "@nx-go/nx-go@npm:2.7.0"
+"@nx-go/nx-go@npm:^4.0.0":
+  version: 4.1.1
+  resolution: "@nx-go/nx-go@npm:4.1.1"
   dependencies:
-    fs-extra: "npm:^9.1.0"
-  checksum: 89fe1d97429aa3f1bcf8edfc49e1220ac3ac72dae13ef1be79d169ef3c0303cb567df9bd90d4039d5903ea23f00a1bb88330c110493b30f5c55d476e3625d9f2
+    "@nx/devkit": "npm:>= 20 < 23"
+    tslib: "npm:^2.3.0"
+  checksum: 6fd1495a2930501cf8a279496f26b0f764ff09d05658635a68c7c51fbb4079a7c7afd44759368e4d67f3dd5664754eb1d07645f3f1269221f3a025da3a5dcb88
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:>= 20 < 23":
+  version: 22.7.12
+  resolution: "@nx/devkit@npm:22.7.12"
+  dependencies:
+    "@zkochan/js-yaml": "npm:0.0.7"
+    ejs: "npm:5.0.1"
+    enquirer: "npm:~2.3.6"
+    minimatch: "npm:10.2.5"
+    semver: "npm:^7.6.3"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 21 <= 23 || ^22.0.0-0"
+  checksum: 8193c29ac31a1ab18afa0761f93212f010ac2c0c231f8df8a6f967ebe0dfee5b17d5a07f1c3bc3eb81f4c4933608f39b512d9b53ae5072cd1000d31b6e9da0ca
   languageName: node
   linkType: hard
 
@@ -220,6 +238,17 @@ __metadata:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: acecf7566836409c3cbda8a10dadf253b144b5bd4dd3cae7f07399291e2a72a9e212c26c4ea766524869fc4c849c1a0faff2b068ac70fc5b0a62d15c5811f7ff
+  languageName: node
+  linkType: hard
+
+"@zkochan/js-yaml@npm:0.0.7":
+  version: 0.0.7
+  resolution: "@zkochan/js-yaml@npm:0.0.7"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: 1469de29107b172b7fa972a486639dccfff89c422b553fd4ced7fb74e839dc5e6a3a7a5872cb2ce4aa310f71d3dc8ea960c8260b446f1bf4f5bfc644778ed368
   languageName: node
   linkType: hard
 
@@ -344,13 +373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"at-least-node@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "at-least-node@npm:1.0.0"
-  checksum: fed1be4307a3752f3a863a6e0219c58fe6838ee95c77ecafffd2a72bbfe4ff33695777e4bffe2a095ef5671c638b803a55e0d39a728c7b0afa9adaa5900444bd
-  languageName: node
-  linkType: hard
-
 "axios@npm:^1.0.0":
   version: 1.20.0
   resolution: "axios@npm:1.20.0"
@@ -367,6 +389,13 @@ __metadata:
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
   checksum: 9ca7fca1845f06edbd8478e209a2e8eed5bb148a021719e77affeaf0c61e45af20279e4540a9f11942acc27c078fc132ff0ebc9c16a403033cff5af3d8199f40
+  languageName: node
+  linkType: hard
+
+"balanced-match@npm:^4.0.2":
+  version: 4.0.4
+  resolution: "balanced-match@npm:4.0.4"
+  checksum: 67374f75d3d1b0f4007808daa7ca0064bf7bf6c14b1593a3e36e7a3ddf7c4f87f9f1e8843d60380121428f0ac9107511cc22106407ec13dc8c0bb03297bac1fc
   languageName: node
   linkType: hard
 
@@ -404,6 +433,15 @@ __metadata:
   dependencies:
     balanced-match: "npm:^1.0.0"
   checksum: 0f8d0d6a165d636fed93a7dd9321a5ae122cac9a672d8a9e01997e4ae09743cb3cbfb0a6e6b32303cda0f1f40617e2c0953f28f59a6f01d6d12c9698a3f0e41b
+  languageName: node
+  linkType: hard
+
+"brace-expansion@npm:^5.0.5":
+  version: 5.0.12
+  resolution: "brace-expansion@npm:5.0.12"
+  dependencies:
+    balanced-match: "npm:^4.0.2"
+  checksum: 5aa627b75b2d54b1a2123957996f3bfafd2abab169b8d841200546b67fe0c4884e68c889caef483d62440e9918e1ab3b9f39ed2823e730f5a6af73cb81390485
   languageName: node
   linkType: hard
 
@@ -637,6 +675,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ejs@npm:5.0.1":
+  version: 5.0.1
+  resolution: "ejs@npm:5.0.1"
+  bin:
+    ejs: bin/cli.js
+  checksum: 44fd7194bbaa7cc80e99740d4bb19e47f97fac2dcd359532ca64ae28dde63b3275bdeec2b68454a5ca530ea076c50735a10c2e401c396cbf1735860d5c213058
+  languageName: node
+  linkType: hard
+
 "ejs@npm:^3.1.7":
   version: 3.1.8
   resolution: "ejs@npm:3.1.8"
@@ -867,18 +914,6 @@ __metadata:
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
   checksum: 20d9909070e7d9754cb651af067ae4343b5fc9b05fa9b8765a9348dab7dfa9b78c0f1ebe791774f06d4cca4231f4be9889a916d0457e8e87097a613e6bdd1746
-  languageName: node
-  linkType: hard
-
-"fs-extra@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "fs-extra@npm:9.1.0"
-  dependencies:
-    at-least-node: "npm:^1.0.0"
-    graceful-fs: "npm:^4.2.0"
-    jsonfile: "npm:^6.0.1"
-    universalify: "npm:^2.0.0"
-  checksum: fc8ff3111ca42a4a3118e63247b1ebe4fbe4abc6daed2d51414699efb5661a2b9aeeb1b9283cb63544011a50b8f59c315e53b06d9c1b38a7786be99f8e59dabb
   languageName: node
   linkType: hard
 
@@ -1408,6 +1443,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:10.2.5":
+  version: 10.2.5
+  resolution: "minimatch@npm:10.2.5"
+  dependencies:
+    brace-expansion: "npm:^5.0.5"
+  checksum: 40ac5db076d6fcfcccb1ab21d89c0cf14777a8024162906677f1e21ac6b8b5a2a0dab682d3e5c424bdde1ed4ebf2d8e68f51a61c6d44b821f1068d2d81d93954
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:3.0.5":
   version: 3.0.5
   resolution: "minimatch@npm:3.0.5"
@@ -1533,7 +1577,7 @@ __metadata:
   resolution: "monorepo@workspace:."
   dependencies:
     "@nrwl/devkit": "npm:^15.7.1"
-    "@nx-go/nx-go": "npm:^2.7.0"
+    "@nx-go/nx-go": "npm:^4.0.0"
     nx: "npm:15.7.1"
     prettier: "npm:^2.6.2"
     typescript: "npm:^4.9.5"
@@ -1908,6 +1952,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 94ad80ee14889020cb4a14d809fb99d16cbf4ff3dc7f4c564fc72efe2c5763a60090a1c16a9fd18ceeb1e993a1303a4d870c0a22f26adaf435b368b46a7d8462
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.6.3":
+  version: 7.8.5
+  resolution: "semver@npm:7.8.5"
+  bin:
+    semver: bin/semver.js
+  checksum: 5360fd810e7f689b68d12e0de55bb6d2606c7f2e10980680e2b8dfcb011e8baeb836b5a0e96e2a153b12ba9b78472b4b820ecbab430321596cd0e488840335bb
   languageName: node
   linkType: hard
 
