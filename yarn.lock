@@ -1579,7 +1579,7 @@ __metadata:
     "@nrwl/devkit": "npm:^15.7.1"
     "@nx-go/nx-go": "npm:^4.0.0"
     nx: "npm:15.7.1"
-    prettier: "npm:^2.6.2"
+    prettier: "npm:^3.0.0"
     typescript: "npm:^4.9.5"
   languageName: unknown
   linkType: soft
@@ -1817,12 +1817,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.2":
-  version: 2.8.4
-  resolution: "prettier@npm:2.8.4"
+"prettier@npm:^3.0.0":
+  version: 3.9.8
+  resolution: "prettier@npm:3.9.8"
   bin:
-    prettier: bin-prettier.js
-  checksum: e8a99b3a385d8d09881a64b759b9cd88e44ab7ba09832d55608fd7203efdc78f0d94773532f3bb3bbb3f579096f7011883df06a26eb61792e786ea4f5fc984f0
+    prettier: bin/prettier.cjs
+  checksum: a4751b1e7ec01465662c0401ea73d54d04a09fc512266e4801fe0e6c0484cc6b3218f8ee49c13008b2f470b552c9db4e40b2005f7af2e1c360d8750ad2e8e120
   languageName: node
   linkType: hard
 
