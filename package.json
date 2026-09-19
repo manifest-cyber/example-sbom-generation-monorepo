@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@nrwl/devkit": "^15.7.1",
+    "@nrwl/devkit": "^19.0.0",
     "@nx-go/nx-go": "^4.0.0",
-    "nx": "15.7.1",
+    "nx": "23.2.1",
     "prettier": "^3.0.0",
     "typescript": "^4.9.5"
   },
