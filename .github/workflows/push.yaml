@@ -30,7 +30,7 @@ jobs:
           artifact-name: bom.json
           format: cyclonedx-json
       - name: Transmit generated SBOM to Manifest
-        uses: manifest-cyber/manifest-github-action@6bf8917b77e9d721d7971dfae955b968ab3bd817 # main
+        uses: manifest-cyber/manifest-github-action@f327cc476f99eff87d343adbe8504015241761fb # main
         id: transmit
         with:
           apiKey: ${{ secrets.MANIFEST_API_KEY }}
